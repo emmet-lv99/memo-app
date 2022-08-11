@@ -1,5 +1,5 @@
 <template>
-  <header>i am footer</header>
+  <footer>&copy; 2022 Memo app. All rights reserved.</footer>
 </template>
 
 <script>
@@ -10,6 +10,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#header-comp {
+footer {
+  background: #f7f7f7;
+  broder-top: 1px solid #eee;
+  padding: 25px;
 }
 </style>

@@ -1,16 +1,17 @@
 <template>
   <div class="ground">
     <header-comp />
-    <div>Content</div>
+    <memo-comp />
     <footer-comp />
   </div>
 </template>
 
 <script>
 import HeaderComp from './HeaderComp.vue'
+import MemoComp from './MemoComp.vue'
 import footerComp from './FooterComp.vue'
 export default {
-  components: { HeaderComp, footerComp },
+  components: { HeaderComp, footerComp, MemoComp },
 }
 </script>
 
