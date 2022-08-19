@@ -4,7 +4,7 @@ const port = 3000
 
 const memos = ['메모1 내용', '메모2 내용', '메모3 내용']
 
-app.get('/', (req, res) => {
+app.get('/api/memos', (req, res) => {
   res.send(memos)
 })
 

@@ -13,6 +13,7 @@
 
 <script>
 import { reactive } from 'vue'
+import axios from 'axios'
 
 export default {
   name: 'HeaderComp',
@@ -24,6 +25,10 @@ export default {
     const add = () => {
       state.data.push('추가된 메모에요')
     }
+
+    axios.get('/api/memos').then(res => {
+      console.log(res)
+    })
     return { state, add }
   },
 }
