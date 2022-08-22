@@ -16,17 +16,11 @@ app.post('/api/memos', (req,res)=>{
   res.send(memos)
 })
 
-// app.put('/api/memos/:idx', (req,res)=>{
-//   // console.log(req.params.idx)
-//   memos[req.idx] = req.body.content
-//   res.send(memos)
-// })
-
-app.put('/api/memos/:idx', (req, res) =>{
-  memos[req.idx] = req.body.content
-  console.log(req)
+app.put('/api/memos/:idx', (req,res)=>{
+  memos[req.params.idx] = req.body.content
   res.send(memos)
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
